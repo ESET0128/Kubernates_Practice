@@ -9,4 +9,4 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v4
       - name: Hello world
-        run: "Hello World, I am Saurabh Kumar"
+        run: echo "Hello World, I am Saurabh Kumar"
