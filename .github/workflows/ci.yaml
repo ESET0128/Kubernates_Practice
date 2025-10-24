@@ -16,7 +16,7 @@ jobs:
         run: echo "Hello Github Action"
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "::$GITHUB_OUTPUT name=date::$(date +'%Y-%m-%d')"
       - name: Print current Git branch
         run: |
           BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
